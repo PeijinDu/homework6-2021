@@ -93,10 +93,11 @@ div > img{
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
+  -webkit-animation-name: logo_grow;
   animation-name: logo_grow;
   animation-duration: 15s;
   /* transition-property: width, opacity; */
-  transition-timing-function: linear;
+  
 }
 
 /*Keyframes for animation*/
@@ -107,7 +108,7 @@ div > img{
     opacity: 0;
   }
   to{
-    widows: 420px;
+    width: 420px;
     opacity: 1;
   }
 }
@@ -118,77 +119,79 @@ div > img{
     opacity: 0;
   }
   to{
-    widows: 420px;
-    opacity: 1;
+    width: 420px;
+    opacity: 1;}
   /*Your code here.*/
 
 } 
 
 @media screen and (min-width: 850px){
-  
-/*Requirement 10*/
-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /*Your  code here again.*/
-}
-/*Requirement 10*/
-.nav_links{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  /*Your code here again.*/  
-}
 
-/*Requirement 11*/
-.package {
-  flex-basis: 230px;
-  /*Your code here again.*/
-}
-  
-
-   
-
-/*Requirement 12*/
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; 
+  /*Requirement 10*/
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*Your  code here again.*/
   }
-/*Add media query to handle reduced-motion*/
-/*Your code here again.*/ 
-
-
-
-@media print { 
-  body{
-    background-image: none;
-  } 
-  /*Requirement 13*/
-  /*Requirement 14*/
-  nav{
-    width: 100%;
-  }
-  /*Requirement 15*/
+  /*Requirement 10*/
   .nav_links{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    /*Your code here again.*/  
   }
-  /*Requirement 16*/
-  .price{
-    display: flex;
-    align-items: flex-end;
+  
+  /*Requirement 11*/
+  .package {
+    flex-basis: 230px;
+    /*Your code here again.*/
   }
-  /*Requirement 17*/
-  .package{
-    border: 2px solid #45ADAD;
-    display: flex;
-    flex-basis: 200px;
   }
-  /*Requirement 18*/
-  .gallery{
-    display: none;
+    
+  
+     
+  
+  /*Requirement 12*/
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; 
+    }
+  /*Add media query to handle reduced-motion*/
+  /*Your code here again.*/ 
   }
-}
+  
+  
+  @media print { 
+    body{
+      background-image: none;
+    } 
+    /*Requirement 13*/
+    /*Requirement 14*/
+    nav{
+      width: 100%;
+    }
+    /*Requirement 15*/
+    .nav_links{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    /*Requirement 16*/
+    .price{
+      display: flex;
+      align-items: flex-end;
+    }
+    /*Requirement 17*/
+    .package{
+      border: 2px solid #45ADAD;
+      display: flex;
+      flex-basis: 200px;
+    }
+    /*Requirement 18*/
+    .gallery{
+      display: none;
+    }
+  }
+  
