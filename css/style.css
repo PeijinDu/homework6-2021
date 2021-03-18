@@ -95,12 +95,11 @@ div > img{
 #logo{
    /*Your code here.*/
   
-  -webkit-animation-name: logo_grow;
-  -webkit-animation-duration: 15s;
+  /* -webkit-animation-name: logo_grow;
+  -webkit-animation-duration: 15s; */
   
   animation-name: logo_grow;
   animation-duration: 15s;
-  /* transition-property: width, opacity; */
   
 }
 
