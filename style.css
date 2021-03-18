@@ -179,7 +179,7 @@ div > img{
     .nav_links{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     /*Requirement 16*/
     .price{
